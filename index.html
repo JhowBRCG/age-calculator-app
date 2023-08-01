@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="src/css/style.min.css" />
+    <link
+      rel="shortcut icon"
+      href="src/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="calculator">
+        <form action="" class="calculator__form" id="form">
+          <div class="calculator__form-header">
+            <div class="calculator__wrapper-input">
+              <label for="day">day</label>
+              <input type="text" id="day" placeholder="DD" />
+              <p class="calculator__form-error">This field is required</p>
+            </div>
+            <div class="calculator__wrapper-input">
+              <label for="month">month</label>
+              <input type="text" id="month" placeholder="MM" />
+              <p class="calculator__form-error">This field is required</p>
+            </div>
+            <div class="calculator__wrapper-input">
+              <label for="year">year</label>
+              <input type="text" id="year" placeholder="YYYY" />
+              <p class="calculator__form-error">This field is required</p>
+            </div>
+          </div>
+          <button type="submit">
+            <img src="src/images/icon-arrow.svg" alt="Calculate age" />
+          </button>
+        </form>
+
+        <div class="calculator__results">
+          <p><span>--</span> years</p>
+          <p><span>--</span> months</p>
+          <p><span>--</span> days</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="src/js/app.js"></script>
+  </body>
+</html>

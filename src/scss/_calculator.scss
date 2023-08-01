@@ -1,0 +1,95 @@
+@use "variables";
+
+.calculator {
+  background: variables.$white;
+  width: 500px;
+  padding: 4rem;
+  border-radius: 1rem;
+  border-bottom-right-radius: 12rem;
+
+  &__form {
+    position: relative;
+
+    .calculator__form-header {
+      display: flex;
+      padding-bottom: 3rem;
+      position: relative;
+      gap: 1.5rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 85%;
+        height: 1px;
+        background: variables.$light-grey;
+        bottom: 0;
+      }
+    }
+
+    input {
+      max-width: 100px;
+      border: 1px solid variables.$light-grey;
+      border-radius: 0.5rem;
+      font-size: 2rem;
+      padding: 0.5rem 1rem;
+      transition: all 200ms ease;
+
+      &:hover {
+        border: 1px solid variables.$purple;
+      }
+    }
+
+    input.error {
+      border: 1px solid variables.$light-red;
+    }
+
+    label {
+      text-transform: uppercase;
+      color: variables.$smokey-grey;
+      font-size: 1.2rem;
+    }
+
+    .calculator__form-error {
+      font-size: 0.9rem;
+      color: variables.$light-red;
+      font-style: italic;
+      font-weight: 400;
+      margin-top: 0.5rem;
+    }
+
+    button {
+      background: variables.$purple;
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      transition: all 200ms ease;
+      text-align: center;
+      position: absolute;
+      right: 8px;
+      bottom: -30px;
+
+      img {
+        width: 32px;
+        margin: auto;
+      }
+
+      &:hover {
+        background: variables.$off-black;
+      }
+    }
+  }
+
+  &__results {
+    margin-top: 4rem;
+    p,
+    span {
+      font-size: 5rem;
+      font-weight: 800;
+      font-style: italic;
+    }
+
+    span {
+      color: variables.$purple;
+    }
+  }
+}

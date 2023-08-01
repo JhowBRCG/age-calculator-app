@@ -1,0 +1,25 @@
+@media screen and (max-width: 425px) {
+  body {
+    padding: 1rem;
+  }
+
+  .calculator {
+    padding: 2rem;
+
+    .calculator__form-header {
+      padding-bottom: 5rem;
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+
+  input {
+    width: 80px;
+  }
+
+  button {
+    left: 0;
+    margin: auto;
+  }
+}
